@@ -27,6 +27,10 @@ Validation
 
 - The signature of ``Validator::validate(array $data, bool $newRecord = true, array $context = [])`` has now a additional third parameter ``$context``.
   It can be used to pass necessary context into the validation when marshalling.
+- The ``existsIn`` validation rule now defaults ``allowNullableNulls`` to ``true`` instead of ``false``.
+  This means that ``null`` values in nullable foreign keys will pass validation by default, which is more
+  semantically correct for optional relationships. If you need the previous behavior where ``null`` values
+  fail validation, you can explicitly set ``allowNullableNulls`` to ``false`` in your validation rules.
 
 View
 ----
