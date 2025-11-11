@@ -14,9 +14,7 @@ CakePHP の中に含まれるコンポーネントの詳細については、各
 .. toctree::
     :maxdepth: 1
 
-    /controllers/components/authentication
     /controllers/components/flash
-    /controllers/components/security
     /controllers/components/request-handling
     /controllers/components/form-protection
     /controllers/components/check-http-cache
